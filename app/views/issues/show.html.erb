@@ -1,0 +1,11 @@
+<div class="container">
+	<div class="panel panel-default">
+		<div class="panel-heading"><h3><%= @issue.title %></h3></div>
+		<div class="panel-body">
+			<p>Due on: <%= @issue.due_date %></p>
+			<p>Notes: <%= @issue.note %></p>
+			<button type="button" class="btn btn-outline-primary"><%= link_to 'Edit', edit_issue_path(@issue) %></button>
+			<button type="button" class="btn btn-outline-secondary"><%= link_to 'Back to Overview', issues_path%></button>				
+		</div>
+	</div>
+</div>
